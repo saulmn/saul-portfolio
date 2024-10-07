@@ -1,0 +1,21 @@
+---
+import {cn} from "../../utils/misc"
+
+interface Props {
+	title?: string;
+	body?: string;
+  className?: string;
+}
+
+const { title, body, className} = Astro.props;
+---
+
+<div class={cn("border-slate-200 border-2 rounded-2xl p-4",className)}>
+		<h2 class="text-white font font-semibold text-left">
+			{title}
+		</h2>
+		<p class="text-white">
+			{body}
+		</p>
+</div>
+
