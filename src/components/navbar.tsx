@@ -6,19 +6,8 @@ export function NavBar() {
 			<div className="flex items-center space-x-6">
 				<Logo />
 			</div>
-			<div className="flex">
-				<div className="hidden lg:flex items-center justify-end space-x-5">
-					about
-				</div>
-				<div className="hidden lg:flex items-center justify-end space-x-5">
-					Github
-				</div>
-				<div className="hidden lg:flex items-center justify-end space-x-5">
-					in
-				</div>
-				<div className="hidden lg:flex items-center justify-end space-x-5">
-					x
-				</div>
+			<div className="hidden lg:flex items-center justify-end space-x-5">
+				About Me
 			</div>
 			<div className="hidden lg:flex items-center justify-end space-x-5">
 				Theme
