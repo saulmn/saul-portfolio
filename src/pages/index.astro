@@ -2,13 +2,22 @@
 import "@/styles/global.css"
 import Layout from '../layouts/Layout.astro';
 // Components
-import {Card} from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/Hero/hero"
+import { Experience } from "@/components/Experience/Experience"
+import { Skills } from "@/components/Skills/Skills"
+import { AboutMe } from "@/components/AboutMe/AboutMe"
+import { Contact } from "@/components/Contact/Contact"
+import { Footer } from "@/components/Footer/Footer"
 ---
 
-<Layout title="Welcome">
+<Layout title="Saul MN">
 	<main class="">
 			<Hero />
+			<Experience />
+			<Skills />
+			<AboutMe />
+			<Contact />
+			<Footer />
 	</main>
 </Layout>
 

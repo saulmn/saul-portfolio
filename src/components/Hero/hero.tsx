@@ -1,5 +1,5 @@
 // Components
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 
 export function Hero() {
 	return (
@@ -7,14 +7,9 @@ export function Hero() {
 			<div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl gap-10">
 				<div className="flex flex-col items-start justify-center gap-10">
 					<h1 className="text-5xl font-semibold text-left">
-						Hi ✌️, my name is Saul and i'm a computer science engineer.
+						Hi ✌️, my name is Saúl and i'm a Computer Science Engineer.
 					</h1>
-					<div className="flex items-center justify-start w-1/2 ">
-						<Button className="rounded-2xl w-3/4" variant="default">
-							Let's talk
-						</Button>
-					</div>
-					<div className="flex gap-10">
+					<div className="flex justify-between w-full gap-10">
 						<a
 							href="https://www.github.com/saulmn"
 							target="_blank"
@@ -23,7 +18,7 @@ export function Hero() {
 							Github
 						</a>
 						<a
-							href="https://www.linkedin.com/saulmn"
+							href="https://www.linkedin.com/in/saulmn/"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -33,9 +28,12 @@ export function Hero() {
 						<a href="https://www.drive.com/" target="_blank" rel="noreferrer">
 							CV
 						</a>
+						<a href="https://www.drive.com/" target="_blank" rel="noreferrer">
+							Mail
+						</a>
 					</div>
 				</div>
-				<div className="flex justify-center items-center">
+				<div className="flex justify-center items-center max-w-3xl">
 					<img
 						alt="Hi!"
 						loading="lazy"
