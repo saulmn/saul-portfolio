@@ -1,7 +1,8 @@
 export function Footer() {
   return (
-    <section className="font-semibold">
-      <h1>Footer</h1>
+    <section className="flex flex-col justify-center items-center p-4">
+      <p>Made with in TLX</p>
+      <p>Saul Maldonado Navarro.</p>
     </section>
   );
 }
