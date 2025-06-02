@@ -3,13 +3,13 @@
   "libraries": [
     {
       "name": "simple-icons",
-      "directory": "./components",
+      "directory": "./public/icons",
       "postinstall": [],
       "transformers": []
     },
     {
       "name": "tabler-icons",
-      "directory": "./components",
+      "directory": "./public/icons",
       "postinstall": [],
       "transformers": []
     }
