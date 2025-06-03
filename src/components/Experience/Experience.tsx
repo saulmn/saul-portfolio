@@ -2,7 +2,7 @@ import { Timeline } from "../ui/timeline";
 export function Experience() {
   const data = [
     {
-      title: "PolyWorks Mexico",
+      title: "PolyWorks México",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
@@ -87,7 +87,7 @@ export function Experience() {
       ),
     },
     {
-      title: "Quantum Mexico",
+      title: "Quantum México",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
