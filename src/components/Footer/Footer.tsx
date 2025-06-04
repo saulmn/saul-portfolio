@@ -1,8 +1,9 @@
 export function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
-    <section className="flex flex-col justify-center items-center p-4">
-      <p>Made with ❤️ in TLX</p>
-      <p>Saul Maldonado Navarro.</p>
-    </section>
+    <footer className="flex flex-col justify-center items-center p-4">
+      <p>Made with ❤️ and ☕ in TLX</p>
+      <p>{`Saúl Maldonado Navarro - ${currentYear}.`}</p>
+    </footer>
   );
 }

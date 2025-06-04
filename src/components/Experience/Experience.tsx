@@ -1,6 +1,5 @@
 import { Timeline } from "../ui/timeline";
 import { WorkCard } from "../ui/work-card";
-import { technologies } from "@/constants/technologies";
 
 export function Experience() {
   const data = [
@@ -37,6 +36,11 @@ export function Experience() {
                 name: "Tailwind CSS",
                 color: "bg-[#048CA5]",
                 border: "border-[#06B6D4]",
+              },
+              {
+                name: "Vite",
+                color: "bg-[#A25EF5]",
+                border: "border-[#BD34FE]",
               },
               {
                 name: "Express",
@@ -214,7 +218,7 @@ export function Experience() {
   const description =
     "Companies I’ve had the opportunity to grow with, build products for, and solve real-world problems.";
   return (
-    <section className="font-semibold">
+    <section className="font-semibold bg-background">
       <Timeline title={title} description={description} data={data} />
     </section>
   );
