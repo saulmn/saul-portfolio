@@ -76,7 +76,7 @@ export function AboutMe() {
           </div>
           <div className="text-2xl flex-col max-w-2xl mx-auto space-y-4">
             <article>
-              {`Hey! I’m Saul Maldonado Navarro, a ${age} y/o computer Computer 
+              {`Hey! I’m Saul Maldonado Navarro, a ${age} y/o Computer 
             Science Engineer and full-stack developer
             from Tlaxcala, Mexico. I specialize in building clean, efficient,
             and maintainable web applications using technologies like React,
