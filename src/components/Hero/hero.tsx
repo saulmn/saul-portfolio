@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { FlipWords } from "@/components/ui/flip-words";
 
 export function Hero() {
   const links = [
@@ -23,14 +24,20 @@ export function Hero() {
       alt: "Email",
     },
   ];
-
+  const words = [
+    "Computer Science Engineer",
+    "Software Developer",
+    "Tech Enthusiast",
+    "Mountain Biker",
+  ];
   return (
     <section className="w-screen h-screen flex justify-center items-center p-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl gap-10">
-        <div className="flex flex-col items-start justify-center gap-10">
-          <h1 className="text-4xl font-semibold text-left">
-            Hi ✌️, my name is Saúl and I'm a Computer Science Engineer.
-          </h1>
+      <div className="grid grid-cols-1 md:grid-cols-5 max-w-5xl gap-10">
+        <div className="flex col-span-3 flex-col items-start justify-center gap-10">
+          <article className="text-4xl mx-auto font-semibold text-neutral-600 dark:text-neutral-400">
+            <p className="mb-2">Hi ✌️, my name is Saúl and I'm a</p>
+            <FlipWords words={words} /> <br />
+          </article>
           <div className="flex justify-around w-full">
             {links.map((link, index) => (
               <motion.a
@@ -49,7 +56,7 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center items-center max-w-3xl">
+        <div className="flex col-span-2 justify-center items-center max-w-3xl">
           <img
             alt="Hi!"
             loading="lazy"

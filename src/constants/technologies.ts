@@ -45,8 +45,8 @@
       color: "bg-[#2496ED]",
     },
     {
-      name: "PostgreSQL",
-      icon: "./icons/postgresql.svg",
+      name: "MySQL",
+      icon: "./icons/mysql.svg",
       color: "bg-[#336791]",
     },
     {

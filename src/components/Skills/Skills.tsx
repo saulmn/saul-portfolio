@@ -1,6 +1,7 @@
 import { WobbleCard } from "../ui/wobble-card";
 import { cn } from "@/lib/utils";
 import { technologies } from "@/constants/technologies";
+import { Separator } from "../ui/separator";
 
 export function Technologies() {
   return (
@@ -25,7 +26,7 @@ export function Technologies() {
                   key={tech.name}
                   src={tech.icon}
                   alt={tech.name}
-                  style={{ width: "24px", height: "24px", marginRight: "8px" }}
+                  className="w-6 h-6 text-white"
                 />
                 <span className="text-white mt-2">{tech.name}</span>
               </WobbleCard>
