@@ -13,7 +13,10 @@ import { Label } from "../ui/label";
 
 export function Contact() {
   return (
-    <section className="font-semibold w-full flex items-center justify-center py-10">
+    <section
+      className="font-semibold w-full flex items-center justify-center py-10"
+      id="contact"
+    >
       <Card className="max-w-3xl h-full">
         <CardHeader>
           <CardTitle className="text-2xl">Contact Me</CardTitle>

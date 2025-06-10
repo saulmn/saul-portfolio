@@ -49,7 +49,7 @@ export function AboutMe() {
     age--;
   }
   return (
-    <section className="bg-background mt-10 w-full">
+    <section className="bg-background mt-10 w-full" id="about-me">
       <div className="max-w-7xl flex items-center justify-center">
         <h1 className="text-4xl font-semibold">About Me</h1>
       </div>
@@ -60,8 +60,8 @@ export function AboutMe() {
               <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
                 Hellow :)
               </p>
-              {items.map((item) => (
-                <DraggableCardBody className={item.className}>
+              {items.map((item, index) => (
+                <DraggableCardBody key={index} className={item.className}>
                   <img
                     src={item.image}
                     alt={item.title}

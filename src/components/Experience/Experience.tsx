@@ -218,7 +218,7 @@ export function Experience() {
   const description =
     "Companies I’ve had the opportunity to grow with, build products for, and solve real-world problems.";
   return (
-    <section className="font-semibold bg-background">
+    <section className="font-semibold bg-background" id="experience">
       <Timeline title={title} description={description} data={data} />
     </section>
   );

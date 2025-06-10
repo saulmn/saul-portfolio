@@ -5,10 +5,13 @@ import { Separator } from "../ui/separator";
 
 export function Technologies() {
   return (
-    <section className="bg-background mt-10 w-full font-semibold">
+    <section
+      className="bg-background mt-10 w-full font-semibold"
+      id="technologies"
+    >
       <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
         <h1 className="text-4xl">Technologies</h1>
-        <p className="mt-2">
+        <p className="mt-2 text-neutral-700">
           A list of languages, frameworks, and tools I’ve worked with recently.
         </p>
         <div className="mt-10 flex items-center justify-center">
@@ -26,7 +29,7 @@ export function Technologies() {
                   key={tech.name}
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-6 h-6 text-white"
+                  className="w-6 h-6"
                 />
                 <span className="text-white mt-2">{tech.name}</span>
               </WobbleCard>

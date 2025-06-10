@@ -27,8 +27,9 @@ export function Hero() {
   const words = [
     "Computer Science Engineer",
     "Software Developer",
-    "Tech Enthusiast",
+    "Tech Nerd",
     "Mountain Biker",
+    "Coffee Enthusiast",
   ];
   return (
     <section className="w-screen h-screen flex justify-center items-center p-4">
@@ -58,10 +59,10 @@ export function Hero() {
         </div>
         <div className="flex col-span-2 justify-center items-center max-w-3xl">
           <img
-            alt="Hi!"
+            alt="Saul M. N."
             loading="lazy"
-            className="rounded-full"
-            src="https://michaeldeboey.be/img/Micha%C3%ABl.jpg"
+            className="rounded-full w-2xl h-2xl"
+            src="./assets/about-me/saul.PNG"
           />
         </div>
       </div>

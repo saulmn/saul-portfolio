@@ -140,11 +140,6 @@
       color: "bg-[#2088FF]",
     },
     {
-      name: "Sentry",
-      icon: "./icons/sentry.svg",
-      color: "bg-[#362D59]",
-    },
-    {
       name: "Fly.io",
       icon: "./icons/flydotio.svg",
       color: "bg-[#00ADEF]",
