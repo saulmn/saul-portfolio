@@ -50,31 +50,12 @@ export function AboutMe() {
   }
   return (
     <section className="bg-background mt-10 w-full" id="about-me">
-      <div className="max-w-7xl flex items-center justify-center">
+      <div className="max-w-7xl flex items-center justify-center pt-20 px-4 md:px-8 lg:px-10">
         <h1 className="text-4xl font-semibold">About Me</h1>
       </div>
       <div className="mx-auto py-10 w-full px-4 md:px-8 lg:px-10">
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div>
-            <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip">
-              <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
-                Hellow :)
-              </p>
-              {items.map((item, index) => (
-                <DraggableCardBody key={index} className={item.className}>
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="pointer-events-none relative z-10 h-80 w-80 object-cover"
-                  />
-                  <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
-                    {item.title}
-                  </h3>
-                </DraggableCardBody>
-              ))}
-            </DraggableCardContainer>
-          </div>
-          <div className="text-2xl flex-col max-w-2xl mx-auto space-y-4">
+          <div className="text-md md:text-2xl flex-col max-w-2xl mx-auto space-y-4">
             <article>
               {`Hey! I’m Saul Maldonado Navarro, a ${age} y/o Computer 
             Science Engineer and full-stack developer
@@ -97,6 +78,25 @@ export function AboutMe() {
               take a walk with my dogs, play Monster Hunter and discover new
               music.
             </p>
+          </div>
+          <div>
+            <DraggableCardContainer className="relative flex md:min-h-screen w-full items-center justify-center overflow-clip">
+              <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
+                Hellow :)
+              </p>
+              {items.map((item, index) => (
+                <DraggableCardBody key={index} className={item.className}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="pointer-events-none relative z-10 h-80 w-80 object-cover"
+                  />
+                  <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+                    {item.title}
+                  </h3>
+                </DraggableCardBody>
+              ))}
+            </DraggableCardContainer>
           </div>
         </div>
       </div>

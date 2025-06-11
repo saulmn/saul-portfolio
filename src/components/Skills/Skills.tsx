@@ -9,13 +9,13 @@ export function Technologies() {
       className="bg-background mt-10 w-full font-semibold"
       id="technologies"
     >
-      <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h1 className="text-4xl">Technologies</h1>
         <p className="mt-2 text-neutral-700">
           A list of languages, frameworks, and tools I’ve worked with recently.
         </p>
         <div className="mt-10 flex flex-col">
-          <div className="flex flex-col items-end justify-end max-w-5xl">
+          <div className="flex flex-col items-center md:items-end justify-end max-w-5xl">
             <h3 className="text-2xl">Languages</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
               {languages.map((tech) => (
@@ -39,7 +39,7 @@ export function Technologies() {
             </div>
             <Separator className="my-10" />
           </div>
-          <div className="flex flex-col items-start justify-start max-w-5xl">
+          <div className="flex flex-col items-center md:items-start justify-start max-w-5xl">
             <h3 className="text-2xl">Frameworks</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
               {frameworks.map((tech) => (
@@ -63,7 +63,7 @@ export function Technologies() {
             </div>
             <Separator className="my-10" />
           </div>
-          <div className="flex flex-col items-end justify-end max-w-5xl">
+          <div className="flex flex-col items-center md:items-end justify-end max-w-5xl">
             <h3 className="text-2xl">Tools</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
               {tools.map((tech) => (
@@ -87,7 +87,7 @@ export function Technologies() {
             </div>
             <Separator className="my-10" />
           </div>
-          <div className="flex flex-col items-start justify-start max-w-5xl">
+          <div className="flex flex-col items-center md:items-start justify-start max-w-5xl">
             <h3 className="text-2xl">DevOps</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
               {devops.map((tech) => (

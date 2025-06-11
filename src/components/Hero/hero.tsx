@@ -31,13 +31,16 @@ export function Hero() {
     "Mountain Biker",
     "Coffee Enthusiast",
   ];
+  const longestWord = words.reduce((a, b) => (a.length > b.length ? a : b), "");
+
   return (
-    <section className="w-screen h-screen flex justify-center items-center p-4">
-      <div className="grid grid-cols-1 md:grid-cols-5 max-w-5xl gap-10">
-        <div className="flex col-span-3 flex-col items-start justify-center gap-10">
-          <article className="text-4xl mx-auto font-semibold text-neutral-600 dark:text-neutral-400">
-            <p className="mb-2">Hi ✌️, my name is Saúl and I'm a</p>
-            <FlipWords words={words} /> <br />
+    <section className="w-screen h-auto md:h-screen flex justify-center items-center mt-4 md:mt-0">
+      <div className="grid grid-cols-1 md:grid-cols-5 max-w-5xl gap-10 p-4">
+        <div className="flex col-span-1 md:col-span-3 flex-col items-start justify-center gap-10">
+          <article className="text-4xl mx-auto h-auto font-semibold text-neutral-600 dark:text-neutral-400">
+            <p className="z-10 inline-block relative text-center md:text-left">
+              Hi ✌️, my name is Saúl and I'm a Computer Science Engineer
+            </p>
           </article>
           <div className="flex justify-around w-full">
             {links.map((link, index) => (
@@ -57,12 +60,12 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <div className="flex col-span-2 justify-center items-center max-w-3xl">
+        <div className="flex col-span-1 md:col-span-2 justify-center items-center w-full md:max-w-3xl">
           <img
             alt="Saul M. N."
             loading="lazy"
-            className="rounded-full w-2xl h-2xl"
-            src="./assets/about-me/saul.PNG"
+            className="rounded-full"
+            src="./assets/about-me/saul.webp"
           />
         </div>
       </div>
