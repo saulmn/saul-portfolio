@@ -22,7 +22,7 @@ export function NavBar() {
     // },
   ];
   return (
-    <nav className="sticky top-2.5 z-50 mx-2 max-w-2xl md:max-w-4xl flex h-14 items-center justify-between rounded-full bg-opacity-30 bg-white backdrop-blur-sm shadow-xs p-5 text-black xl:px-10">
+    <nav className="sticky top-2.5 z-50 mx-2 md:mx-auto max-w-2xl md:max-w-4xl flex h-14 items-center justify-between rounded-full bg-white shadow-sm p-5 text-black xl:px-10">
       <div className="flex items-center space-x-6">
         <Logo />
       </div>
