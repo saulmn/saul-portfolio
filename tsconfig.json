@@ -7,6 +7,10 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@/icon-name": [
+        "./src/components/ui/icons/types.ts",
+        "./src/icon-name.ts"
       ]
     }
   }

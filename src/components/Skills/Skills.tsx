@@ -1,8 +1,8 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/misc";
 import { Separator } from "../ui/separator";
 import { WobbleCard } from "../ui/wobble-card";
 import { tools, devops, languages, frameworks } from "@/constants/technologies";
-
+import { Icon } from "../ui/icon";
 export function Technologies() {
   return (
     <section
@@ -27,12 +27,7 @@ export function Technologies() {
                     tech.color
                   )}
                 >
-                  <img
-                    key={tech.name}
-                    src={tech.icon}
-                    alt={tech.name}
-                    className="w-8 h-8"
-                  />
+                  <Icon key={tech.name} name={tech.icon} className="w-8 h-8" />
                   <span className="text-white mt-2">{tech.name}</span>
                 </WobbleCard>
               ))}
@@ -51,12 +46,7 @@ export function Technologies() {
                     tech.color
                   )}
                 >
-                  <img
-                    key={tech.name}
-                    src={tech.icon}
-                    alt={tech.name}
-                    className="w-8 h-8"
-                  />
+                  <Icon key={tech.name} name={tech.icon} className="w-8 h-8" />
                   <span className="text-white mt-2">{tech.name}</span>
                 </WobbleCard>
               ))}
@@ -75,12 +65,7 @@ export function Technologies() {
                     tech.color
                   )}
                 >
-                  <img
-                    key={tech.name}
-                    src={tech.icon}
-                    alt={tech.name}
-                    className="w-8 h-8"
-                  />
+                  <Icon key={tech.name} name={tech.icon} className="w-8 h-8" />
                   <span className="text-white mt-2">{tech.name}</span>
                 </WobbleCard>
               ))}
@@ -99,12 +84,7 @@ export function Technologies() {
                     tech.color
                   )}
                 >
-                  <img
-                    key={tech.name}
-                    src={tech.icon}
-                    alt={tech.name}
-                    className="w-8 h-8"
-                  />
+                  <Icon key={tech.name} name={tech.icon} className="w-8 h-8" />
                   <span className="text-white mt-2">{tech.name}</span>
                 </WobbleCard>
               ))}
