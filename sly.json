@@ -1,17 +1,25 @@
 {
-  "$schema": "https://sly-cli.fly.dev/registry/config.json",
-  "libraries": [
-    {
-      "name": "simple-icons",
+  "$schema": "https://sly-cli.fly.dev/registry/config.v2.json",
+  "config": {
+    "icons": {
       "directory": "./public/svg-icons",
       "postinstall": [],
       "transformers": []
     },
-    {
-      "name": "tabler-icons",
-      "directory": "./public/svg-icons",
-      "postinstall": [],
-      "transformers": []
+    "components": {},
+    "utils": {}
+  },
+  "libraries": {
+    "iconify:simple-icons": {
+      "name": "Simple Icons",
+      "config": "icons"
+    },
+    "iconify:tabler": {
+      "name": "Tabler Icons",
+      "config": "icons"
+    },
+    "iconify:lcuide-icons": {
+      "config": "icons"
     }
-  ]
+  }
 }

@@ -4,11 +4,76 @@ import { WorkCard } from "../ui/work-card";
 export function Experience() {
   const data = [
     {
+      title: "Acelerios",
+      content: (
+        <>
+          <WorkCard
+            workRole="Full Stack Developer"
+            time="June 2025 - Now"
+            images={[
+              "./assets/experience/polyworks-1.webp",
+              "./assets/experience/polyworks-2.webp",
+              "./assets/experience/polyworks-3.webp",
+              "./assets/experience/polyworks-4.webp",
+            ]}
+            stack={[
+              {
+                name: "JavaScript",
+                color: "bg-[#C6B700]",
+                border: "border-[#F7DF1E]",
+              },
+              {
+                name: "React",
+                color: "bg-[#379EBE]",
+                border: "border-[#61DAFB]",
+              },
+              {
+                name: "MUI",
+                color: "bg-[#003A91]",
+                border: "border-[#0052CC]",
+              },
+              {
+                name: "Tailwind CSS",
+                color: "bg-[#048CA5]",
+                border: "border-[#06B6D4]",
+              },
+              {
+                name: "Vite",
+                color: "bg-[#A25EF5]",
+                border: "border-[#BD34FE]",
+              },
+              {
+                name: "Express",
+                color: "bg-[#000000]",
+                border: "border-[#000000]",
+              },
+              {
+                name: "Jest",
+                color: "bg-[#96101C]",
+                border: "border-[#C21325]",
+              },
+              {
+                name: "Selenium",
+                color: "bg-[#327C1F]",
+                border: "border-[#43B02A]",
+              },
+              {
+                name: "Node.js",
+                color: "bg-[#267326]",
+                border: "border-[#339933]",
+              },
+            ]}
+            description="Built a web app for internal use with React, Vite, and Express. Integrated Microsoft authentication (MSAL) and APIs from Atlassian and Microsoft Graph. Worked with automated testing, UI architecture, and Agile practices."
+          />
+        </>
+      ),
+    },
+    {
       title: "PolyWorks México",
       content: (
         <>
           <WorkCard
-            role="Full Stack Developer Resident"
+            workRole="Full Stack Developer Resident"
             time="January 2025 - May 2025"
             images={[
               "./assets/experience/polyworks-1.webp",
@@ -73,7 +138,7 @@ export function Experience() {
       content: (
         <>
           <WorkCard
-            role="Full Stack Developer Jr"
+            workRole="Full Stack Developer Jr"
             time="May 2023 - January 2025"
             images={[
               "./assets/experience/karbook-1.webp",
@@ -162,7 +227,7 @@ export function Experience() {
       title: "Quantum México",
       content: (
         <WorkCard
-          role="IT Assistant"
+          workRole="IT Assistant"
           time="February 2023 - May 2023"
           description="Developed internal tools with Microsoft Access and VBA. Designed the company’s landing page and provided tech support and reporting solutions."
           stack={[
@@ -190,7 +255,7 @@ export function Experience() {
       title: "SEPROSIMA",
       content: (
         <WorkCard
-          role="IT Assistant"
+          workRole="IT Assistant"
           time="July 2019 - October 2022"
           description="Provided IT support, maintained computer systems, managed Moodle course platform and email server, and handled user support, reports, and billing tasks."
           stack={[

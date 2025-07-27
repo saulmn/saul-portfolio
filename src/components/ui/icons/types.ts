@@ -23,6 +23,7 @@ export const iconNames = [
   "nodedotjs",
   "nextdotjs",
   "mysql",
+  "menu",
   "mail",
   "linux",
   "linkedin",
