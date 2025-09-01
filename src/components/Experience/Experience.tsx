@@ -9,12 +9,12 @@ export function Experience() {
         <>
           <WorkCard
             workRole="Full Stack Developer"
-            time="June 2025 - Now"
+            time="June 2025 - Present"
             images={[
-              "./assets/experience/polyworks-1.webp",
-              "./assets/experience/polyworks-2.webp",
-              "./assets/experience/polyworks-3.webp",
-              "./assets/experience/polyworks-4.webp",
+              "./assets/experience/brk-1.webp",
+              "./assets/experience/brk-2.webp",
+              "./assets/experience/brk-3.webp",
+              "./assets/experience/brk-4.webp",
             ]}
             stack={[
               {
@@ -63,7 +63,7 @@ export function Experience() {
                 border: "border-[#339933]",
               },
             ]}
-            description="Built a web app for internal use with React, Vite, and Express. Integrated Microsoft authentication (MSAL) and APIs from Atlassian and Microsoft Graph. Worked with automated testing, UI architecture, and Agile practices."
+            description="I’m part of a startup building BuildRunKit, a SaaS platform that helps small business owners with strategy, marketing, and branding. Since joining, I’ve led the frontend development from scratch, creating a production-ready landing page with React, Vite, and Tailwind CSS, including theme switching, multi-language support, and several AI-powered tools (business name generator, slogan creator, QR/Invoice tools, etc.). I also built the platform’s authentication system, contributed to its core features, and rebuilt a non-functional CRM product, handling its auth, database integration, and landing page. In just three months, I’ve helped take the company’s frontend from an empty repo to a live, production-ready platform."
           />
         </>
       ),
