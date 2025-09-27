@@ -60,13 +60,13 @@ export function References() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16 px-4 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <header className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
             References & Resources
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto transition-colors duration-300">
             A curated collection of UI libraries, design resources, and development tools that inspire and power modern web development.
           </p>
         </header>
@@ -74,7 +74,7 @@ export function References() {
         <div className="grid gap-12">
           {referenceCategories.map((category) => (
             <section key={category.title} className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-bold text-white border-b border-gray-600 pb-3">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-600 pb-3 transition-colors duration-300">
                 {category.title}
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -84,16 +84,16 @@ export function References() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group bg-gray-800/50 border border-gray-700 rounded-lg p-6 hover:bg-gray-700/50 hover:border-gray-600 transition-all duration-300 hover:transform hover:scale-105"
+                    className="group bg-white/70 dark:bg-gray-800/70 border border-gray-200 dark:border-gray-700 rounded-lg p-6 hover:bg-white/90 dark:hover:bg-gray-700/90 hover:border-gray-300 dark:hover:border-gray-600 hover:shadow-lg dark:hover:shadow-gray-900/20 transition-all duration-300 hover:transform hover:scale-105 backdrop-blur-sm"
                   >
                     <div className="space-y-3">
-                      <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                         {link.name}
                       </h3>
-                      <p className="text-gray-300 text-sm leading-relaxed">
+                      <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed transition-colors duration-300">
                         {link.description}
                       </p>
-                      <div className="flex items-center text-blue-400 text-sm font-medium">
+                      <div className="flex items-center text-blue-600 dark:text-blue-400 text-sm font-medium transition-colors duration-300">
                         Visit site
                         <svg
                           className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1"
@@ -114,10 +114,10 @@ export function References() {
           ))}
         </div>
 
-        <footer className="text-center mt-16 pt-8 border-t border-gray-700">
-          <p className="text-gray-400">
+        <footer className="text-center mt-16 pt-8 border-t border-gray-300 dark:border-gray-700 transition-colors duration-300">
+          <p className="text-gray-500 dark:text-gray-400 transition-colors duration-300">
             More resources will be added regularly. Have a suggestion?{" "}
-            <a href="/contact" className="text-blue-400 hover:underline">
+            <a href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline transition-colors duration-300">
               Get in touch
             </a>
           </p>

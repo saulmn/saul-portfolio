@@ -1,31 +1,31 @@
-import { type SVGProps } from "react";
-import { cn } from "@/utils/misc";
-import spriteUrl from "@/components/ui/icons/sprite.svg?url";
-import { type IconName } from "@/icon-name";
+import spriteUrl from '@/components/ui/icons/sprite.svg?url'
+import type { IconName } from '@/icon-name'
+import { cn } from '@/utils/misc'
+import type { SVGProps } from 'react'
 
-export { type IconName } from "@/icon-name";
+export type { IconName } from '@/icon-name'
 
-export const href = spriteUrl;
+export const href = spriteUrl
 
 const sizeClassName = {
-  font: "size-[1em]",
-  xs: "size-3",
-  sm: "size-4",
-  md: "size-5",
-  lg: "size-6",
-  xl: "size-7",
-} as const;
+  font: 'size-[1em]',
+  xs: 'size-3',
+  sm: 'size-4',
+  md: 'size-5',
+  lg: 'size-6',
+  xl: 'size-7',
+} as const
 
-type Size = keyof typeof sizeClassName;
+type Size = keyof typeof sizeClassName
 
 const childrenSizeClassName = {
-  font: "gap-1.5",
-  xs: "gap-1.5",
-  sm: "gap-1.5",
-  md: "gap-2",
-  lg: "gap-2",
-  xl: "gap-3",
-} satisfies Record<Size, string>;
+  font: 'gap-1.5',
+  xs: 'gap-1.5',
+  sm: 'gap-1.5',
+  md: 'gap-2',
+  lg: 'gap-2',
+  xl: 'gap-3',
+} satisfies Record<Size, string>
 
 /**
  * Renders an SVG icon. The icon defaults to the size of the font. To make it
@@ -40,15 +40,15 @@ const childrenSizeClassName = {
  */
 export function Icon({
   name,
-  size = "font",
+  size = 'font',
   className,
   title,
   children,
   ...props
 }: SVGProps<SVGSVGElement> & {
-  name: string;
-  size?: Size;
-  title?: string;
+  name: string
+  size?: Size
+  title?: string
 }) {
   if (children) {
     return (
@@ -64,15 +64,15 @@ export function Icon({
         />
         {children}
       </span>
-    );
+    )
   }
   return (
     <svg
       {...props}
-      className={cn(sizeClassName[size], "inline self-center", className)}
+      className={cn(sizeClassName[size], 'inline self-center', className)}
     >
       {title ? <title>{title}</title> : null}
       <use href={`${spriteUrl}#${name}`} />
     </svg>
-  );
+  )
 }

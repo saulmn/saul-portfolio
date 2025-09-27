@@ -2,6 +2,7 @@ import { Logo } from "../Logo/logo";
 import { Button } from "../ui/button";
 import { Icon } from "../ui/icon";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { ThemeSwitcher } from "../ui/theme-switcher";
 
 export function NavBar() {
   const navItems = [
@@ -27,7 +28,7 @@ export function NavBar() {
     // },
   ];
   return (
-    <nav className="sticky top-2.5 z-50 mx-2 md:mx-auto max-w-2xl md:max-w-4xl flex h-14 items-center justify-between rounded-full bg-white/60 backdrop-blur-md shadow-sm p-5 text-black xl:px-10">
+    <nav className="sticky top-2.5 z-50 mx-2 md:mx-auto max-w-2xl md:max-w-4xl flex h-14 items-center justify-between rounded-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm border border-gray-200/20 dark:border-gray-700/20 p-5 text-gray-900 dark:text-gray-100 xl:px-10 transition-all duration-300">
       <div className="flex items-center space-x-6">
         <Logo />
       </div>
@@ -36,14 +37,16 @@ export function NavBar() {
           <a
             key={item.name}
             href={item.link}
-            className="relative group px-2 py-1 transition-colors duration-200"
+            className="relative group px-2 py-1 transition-colors duration-200 hover:text-blue-600 dark:hover:text-blue-400"
           >
             {item.name}
-            <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+            <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-600 dark:bg-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
           </a>
         ))}
+        <ThemeSwitcher />
       </div>
-      <div className="flex lg:hidden items-center justify-end space-x-5">
+      <div className="flex lg:hidden items-center justify-end space-x-2">
+        <ThemeSwitcher />
         <Popover>
           <PopoverTrigger asChild>
             <Button variant="ghost"><Icon name="menu" size="md" /></Button>
@@ -54,10 +57,10 @@ export function NavBar() {
                 <a
                   key={item.name}
                   href={item.link}
-                  className="relative group px-2 py-1 transition-colors duration-200"
+                  className="relative group px-2 py-1 transition-colors duration-200 hover:text-blue-600 dark:hover:text-blue-400"
                 >
                   {item.name}
-                  <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                  <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-600 dark:bg-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                 </a>
               ))}
             </div>
