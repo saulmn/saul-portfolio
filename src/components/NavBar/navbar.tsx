@@ -17,6 +17,10 @@ export function NavBar() {
       name: "About Me",
       link: "#about-me",
     },
+    {
+      name: "References",
+      link: "/references",
+    },
     // {
     //   name: "Contact",
     //   link: "#contact",
