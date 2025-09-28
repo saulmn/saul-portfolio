@@ -53,14 +53,18 @@ export function References() {
     {
       title: "Landing Pages",
       links: [
+        { name: "Helium", url: "https://helium.computer/", description: "Internet without interruptions" },
+        { name: "Studio Billy", url: "https://www.studiobilly.be/", description: "Wij bouwen websites die je merk versterken en klanten overtuigen!" },
         { name: "Trynia MCP Server", url: "https://www.trynia.ai/", description: "Model Context Protocol Server" },
         { name: "Cluely", url: "https://cluely.com/", description: "Invisible AI That Thinks for You" },
+        { name: "Benji SO", url: "https://benji.so/", description: "It's time to simplify everything." },
+        { name: "Runway", url: "https://runway.com/blog", description: "Simulate any business decision in seconds" },
       ]
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16 px-4 transition-colors duration-300">
+    <div className="min-h-screen py-16 px-4 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <header className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
