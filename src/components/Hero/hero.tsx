@@ -1,5 +1,5 @@
-import { motion } from "motion/react";
 import { Icon } from "@/components/ui/icon";
+import { motion } from "motion/react";
 
 export function Hero() {
   const links = [
@@ -34,9 +34,9 @@ export function Hero() {
   const longestWord = words.reduce((a, b) => (a.length > b.length ? a : b), "");
 
   return (
-    <section className="w-full h-screen flex justify-center items-center mt-4 md:mt-0 mx-auto">
+    <section className="w-full h-screen flex justify-center items-center mt-8 md:mt-0 mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-5 max-w-5xl gap-10 p-4">
-        <div className="flex col-span-1 md:col-span-3 flex-col items-start justify-center gap-10">
+        <div className="flex col-span-1 md:col-span-3 flex-col items-start justify-center gap-16">
           <article className="text-4xl mx-auto h-auto font-semibold text-neutral-600 dark:text-neutral-400">
             <p className="z-10 inline-block relative text-center md:text-left">
               Hi ✌️, my name is Saúl and I'm a Computer Science Engineer
@@ -55,7 +55,7 @@ export function Hero() {
                 rel="noreferrer"
                 className="hover:bg-gray-200 p-3 rounded-full transition-colors duration-300"
               >
-                <Icon name={link.icon} className="w-6 h-6 text-black" />
+                <Icon name={link.icon} className="w-6 h-6 text-black dark:text-white fill-white" />
               </motion.a>
             ))}
           </div>

@@ -49,7 +49,7 @@ export function NavBar() {
         <ThemeSwitcher />
         <Popover>
           <PopoverTrigger asChild>
-            <Button variant="ghost"><Icon name="menu" size="md" /></Button>
+            <Button variant="ghost" className="text-gray-900 dark:text-gray-100">🍔</Button>
           </PopoverTrigger>
           <PopoverContent className="z-50 w-40" side="bottom" align="end" alignOffset={-10}>
             <div className="flex flex-col gap-4">
@@ -69,10 +69,7 @@ export function NavBar() {
       </div>
       {/* <motion.div className="hidden lg:flex items-center justify-end space-x-5">
         <a href="#contact">Contact</a>
-      </motion.div> */}
-      {/* <motion.div className="hidden lg:flex items-center justify-end space-x-5">
-        Theme
-      </motion.div>
+      </motion.div> 
       <motion.div className="hidden lg:flex items-center justify-end space-x-5">
         Language
       </motion.div> */}
