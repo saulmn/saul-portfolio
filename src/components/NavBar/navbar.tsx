@@ -8,15 +8,15 @@ export function NavBar() {
   const navItems = [
     {
       name: "Experience",
-      link: "#experience",
+      link: "/#experience",
     },
     {
       name: "Technologies",
-      link: "#technologies",
+      link: "/#technologies",
     },
     {
       name: "About Me",
-      link: "#about-me",
+      link: "/#about-me",
     },
     {
       name: "References",
