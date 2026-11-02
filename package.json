@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "esbuild": "^0.28.2",
     "vite-plugin-icons-spritesheet": "^3.0.1"
   }
 }
