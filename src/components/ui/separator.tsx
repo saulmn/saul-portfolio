@@ -15,7 +15,18 @@ function Separator({
       decorative={decorative}
       orientation={orientation}
       className={cn(
-        "bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px",
+        // Aqua engraved separator — dark top line + white shadow line below
+        "shrink-0 bg-transparent " +
+          "data-[orientation=horizontal]:h-[2px] data-[orientation=horizontal]:w-full " +
+          "data-[orientation=vertical]:h-full data-[orientation=vertical]:w-[2px] " +
+          "data-[orientation=horizontal]:border-t data-[orientation=horizontal]:border-t-gray-400 " +
+          "data-[orientation=horizontal]:border-b data-[orientation=horizontal]:border-b-white " +
+          "dark:data-[orientation=horizontal]:border-t-gray-600 " +
+          "dark:data-[orientation=horizontal]:border-b-gray-800 " +
+          "data-[orientation=vertical]:border-l data-[orientation=vertical]:border-l-gray-400 " +
+          "data-[orientation=vertical]:border-r data-[orientation=vertical]:border-r-white " +
+          "dark:data-[orientation=vertical]:border-l-gray-600 " +
+          "dark:data-[orientation=vertical]:border-r-gray-800",
         className
       )}
       {...props}

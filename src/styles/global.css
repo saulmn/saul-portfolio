@@ -42,15 +42,21 @@
 	--color-chart-3: hsl(var(--chart-3));
 	--color-chart-4: hsl(var(--chart-4));
 	--color-chart-5: hsl(var(--chart-5));
+
+	/* Aqua theme tokens */
+	--color-aqua-blue: #1e78ff;
+	--color-aqua-blue-dark: #0050c8;
+	--color-metal-top: #f0f0f0;
+	--color-metal-bottom: #b8b8b8;
+	--color-gel-from: rgba(255, 255, 255, 0.9);
+	--color-gel-via: rgba(150, 200, 255, 0.8);
+	--color-gel-to: rgba(0, 80, 200, 1);
 }
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
   looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
 */
 @layer base {
 	*,
@@ -64,78 +70,99 @@
 
 @layer base {
 	:root {
-		--background: 210 17% 98%;
-		--foreground: 0 0% 3.9%;
-		--card: 0 0% 100%;
-		--card-foreground: 0 0% 3.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 0 0% 3.9%;
-		--primary: 0 0% 9%;
-		--primary-foreground: 0 0% 98%;
-		--secondary: 0 0% 96.1%;
-		--secondary-foreground: 0 0% 9%;
-		--muted: 0 0% 96.1%;
-		--muted-foreground: 0 0% 45.1%;
-		--accent: 0 0% 96.1%;
-		--accent-foreground: 0 0% 9%;
+		/* Aqua light palette */
+		--background: 210 30% 96%;
+		--foreground: 215 25% 15%;
+		--card: 210 20% 94%;
+		--card-foreground: 215 25% 12%;
+		--popover: 210 25% 97%;
+		--popover-foreground: 215 25% 12%;
+		--primary: 214 100% 55%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 210 15% 88%;
+		--secondary-foreground: 215 25% 20%;
+		--muted: 210 15% 90%;
+		--muted-foreground: 210 10% 45%;
+		--accent: 210 40% 85%;
+		--accent-foreground: 215 25% 15%;
 		--destructive: 0 84.2% 60.2%;
 		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 89.8%;
-		--input: 0 0% 89.8%;
-		--ring: 0 0% 3.9%;
-		--chart-1: 12 76% 61%;
+		--border: 210 20% 78%;
+		--input: 210 20% 92%;
+		--ring: 214 100% 55%;
+		--chart-1: 214 100% 55%;
 		--chart-2: 173 58% 39%;
 		--chart-3: 197 37% 24%;
 		--chart-4: 43 74% 66%;
 		--chart-5: 27 87% 67%;
 		--radius: 0.5rem;
 
-		/* Custom theme colors */
-		--gradient-from: 220 38% 97%;
-		--gradient-via: 220 38% 95%;
-		--gradient-to: 220 38% 97%;
-		--navbar-bg: 0 0% 100%;
-		--navbar-text: 0 0% 3.9%;
-		--hero-gradient-from: 220 38% 97%;
-		--hero-gradient-to: 210 40% 98%;
+		/* Custom Aqua theme colors */
+		--gradient-from: 210 40% 98%;
+		--gradient-via: 210 30% 94%;
+		--gradient-to: 210 25% 90%;
+		--navbar-bg: 210 50% 96%;
+		--navbar-text: 215 25% 15%;
+		--hero-gradient-from: 210 40% 98%;
+		--hero-gradient-to: 210 30% 93%;
+
+		/* Aqua-specific tokens */
+		--aqua-blue: #1e78ff;
+		--aqua-blue-dark: #0050c8;
+		--aqua-gel-top: rgba(255, 255, 255, 0.95);
+		--aqua-gel-mid: rgba(150, 200, 255, 0.85);
+		--metal-top: #f5f5f5;
+		--metal-mid: #dcdcdc;
+		--metal-bottom: #b8b8b8;
+		--titlebar-top: #e0e0e0;
+		--titlebar-bottom: #b0b0b0;
 	}
 
 	.dark {
-		--background: 222 84% 4.9%;
-		--foreground: 210 40% 98%;
-		--card: 222 84% 4.9%;
-		--card-foreground: 210 40% 98%;
-		--popover: 222 84% 4.9%;
-		--popover-foreground: 210 40% 98%;
-		--primary: 210 40% 98%;
-		--primary-foreground: 222 84% 4.9%;
-		--secondary: 217 32% 17.5%;
-		--secondary-foreground: 210 40% 98%;
-		--muted: 217 32% 17.5%;
-		--muted-foreground: 215 20% 65.1%;
-		--accent: 217 32% 17.5%;
-		--accent-foreground: 210 40% 98%;
-		--destructive: 0 62.8% 30.6%;
+		/* Aqua dark palette — deep navy/charcoal */
+		--background: 222 40% 8%;
+		--foreground: 210 40% 92%;
+		--card: 220 35% 11%;
+		--card-foreground: 210 40% 92%;
+		--popover: 222 35% 9%;
+		--popover-foreground: 210 40% 92%;
+		--primary: 214 100% 60%;
+		--primary-foreground: 222 40% 8%;
+		--secondary: 217 28% 18%;
+		--secondary-foreground: 210 40% 92%;
+		--muted: 217 28% 16%;
+		--muted-foreground: 215 20% 60%;
+		--accent: 217 35% 22%;
+		--accent-foreground: 210 40% 92%;
+		--destructive: 0 62.8% 40%;
 		--destructive-foreground: 210 40% 98%;
-		--border: 217 32% 17.5%;
-		--input: 217 32% 17.5%;
-		--ring: 212 72% 59%;
-		--chart-1: 220 70% 50%;
+		--border: 217 28% 22%;
+		--input: 217 28% 18%;
+		--ring: 214 100% 60%;
+		--chart-1: 220 70% 55%;
 		--chart-2: 160 60% 45%;
 		--chart-3: 30 80% 55%;
 		--chart-4: 280 65% 60%;
 		--chart-5: 340 75% 55%;
 
-		/* Custom theme colors for dark mode */
-		--gradient-from: 222 84% 4.9%;
-		--gradient-via: 217 32% 17.5%;
-		--gradient-to: 222 84% 4.9%;
-		--navbar-bg: 222 84% 4.9%;
-		--navbar-text: 210 40% 98%;
-		--hero-gradient-from: 222 84% 4.9%;
-		--hero-gradient-to: 217 32% 17.5%;
+		/* Custom Aqua dark theme colors */
+		--gradient-from: 222 40% 8%;
+		--gradient-via: 220 35% 12%;
+		--gradient-to: 222 40% 8%;
+		--navbar-bg: 222 40% 7%;
+		--navbar-text: 210 40% 92%;
+		--hero-gradient-from: 222 40% 8%;
+		--hero-gradient-to: 220 35% 12%;
+
+		/* Aqua dark tokens */
+		--metal-top: #2a2e3a;
+		--metal-mid: #1e2230;
+		--metal-bottom: #141820;
+		--titlebar-top: #2e3344;
+		--titlebar-bottom: #1a1f2e;
 	}
 }
+
 @layer base {
 	* {
 		@apply border-border;
@@ -145,7 +172,7 @@
 	}
 }
 
-/* Additional utility classes for theme support */
+/* Aqua utility classes */
 @layer utilities {
 	.bg-gradient-theme {
 		background: linear-gradient(
@@ -167,5 +194,46 @@
 	.bg-navbar-theme {
 		background-color: hsl(var(--navbar-bg));
 		color: hsl(var(--navbar-text));
+	}
+
+	/* Aqua gel button base */
+	.aqua-gel {
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.9) 0%,
+			rgba(150, 200, 255, 0.8) 30%,
+			rgba(30, 120, 255, 0.9) 70%,
+			rgba(0, 80, 200, 1) 100%
+		);
+		box-shadow: 0 4px 10px rgba(0, 80, 200, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	/* Aqua brushed metal surface */
+	.aqua-metal {
+		background: linear-gradient(
+			to bottom,
+			#f0f0f0 0%,
+			#dcdcdc 40%,
+			#c8c8c8 100%
+		);
+	}
+
+	/* Aqua window title bar */
+	.aqua-titlebar {
+		background: linear-gradient(to bottom, #e8e8e8 0%, #c0c0c0 100%);
+	}
+
+	/* Aqua text shadow for etched look */
+	.text-aqua-shadow {
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	}
+
+	.dark .text-aqua-shadow {
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	}
+
+	/* Inset pressed look */
+	.aqua-inset {
+		box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
 	}
 }

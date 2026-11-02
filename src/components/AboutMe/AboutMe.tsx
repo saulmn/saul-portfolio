@@ -51,13 +51,21 @@ export function AboutMe() {
   return (
     <section className="bg-background mt-10 w-full" id="about-me">
       <div className="max-w-7xl flex items-center justify-center pt-20 px-4 md:px-8 lg:px-10">
-        <h1 className="text-4xl font-semibold">About Me</h1>
+        <h1
+          className={
+            "text-4xl font-semibold " +
+            "text-gray-800 dark:text-gray-100 " +
+            "[text-shadow:0_1px_0_rgba(255,255,255,0.8)] dark:[text-shadow:none]"
+          }
+        >
+          About Me
+        </h1>
       </div>
       <div className="mx-auto py-10 w-full px-4 md:px-8 lg:px-10">
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="text-md md:text-2xl flex-col max-w-2xl mx-auto space-y-4">
+          <div className="text-md md:text-xl flex-col max-w-2xl mx-auto space-y-4 text-gray-700 dark:text-gray-300">
             <article>
-              {`Hey! I’m Saul Maldonado Navarro, a ${age} y/o Computer 
+              {`Hey! I'm Saul Maldonado Navarro, a ${age} y/o Computer 
             Science Engineer and full-stack developer
             from Tlaxcala, Mexico. I specialize in building clean, efficient,
             and maintainable web applications using technologies like React,
@@ -69,12 +77,12 @@ export function AboutMe() {
               on a SaaS platforms and helping ship features that solve real
               problems. I also have experience with tests like unit, E2E and
               regression, authentication, dashboards, and CI/CD pipelines —
-              always aiming to write code that’s both thoughtful and useful. I
+              always aiming to write code that's both thoughtful and useful. I
               believe in team work, clear communication, and continuous
               improvement and learning.
             </p>
             <p>
-              Outside of work, I’m passionate about mountain biking 🚵‍♂️, hiking,
+              Outside of work, I'm passionate about mountain biking 🚵‍♂️, hiking,
               take a walk with my dogs, play Monster Hunter and discover new
               music.
             </p>
@@ -91,7 +99,13 @@ export function AboutMe() {
                     alt={item.title}
                     className="pointer-events-none relative z-10 h-80 w-80 object-cover"
                   />
-                  <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+                  <h3
+                    className={
+                      "mt-4 text-center text-2xl font-bold " +
+                      "text-gray-700 dark:text-gray-300 " +
+                      "[text-shadow:0_1px_0_rgba(255,255,255,0.6)] dark:[text-shadow:none]"
+                    }
+                  >
                     {item.title}
                   </h3>
                 </DraggableCardBody>
